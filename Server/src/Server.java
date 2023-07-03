@@ -7,7 +7,7 @@ public class Server {
         try (ServerSocket serverSocket = new ServerSocket(1)){
             System.out.println("Server is listening for clients .....   ");
             Socket socket = serverSocket.accept();
-            System.out.println("Client is accepted!");
+            System.out.println("Client is connected!");
 
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
